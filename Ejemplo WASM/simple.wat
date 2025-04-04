@@ -19,4 +19,21 @@
     local.get $b
     i32.mul
   )
+
+  ;; Convierte de Fahrenheit a Celsius
+  (func
+    (export "f2c")
+    (param $f f64)
+    (result f64)
+
+    local.get $f
+    f64.const 32.0
+    f64.sub
+
+    f64.const 5.0
+    f64.mul
+
+    f64.const 9.0
+    f64.div
+  )
 )
