@@ -1,0 +1,4 @@
+
+program = expression EOF
+expression = decimal
+decimal = r'\d+'
